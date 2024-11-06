@@ -11,6 +11,7 @@ class Room extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['name', 'project_id'];
 
     public function project(): BelongsTo
     {
